@@ -23,7 +23,7 @@ class git {
 	}
 		
 	exec { "git-clone":
-		command => "/usr/bin/git clone https://varks:sachinthewall123git@github.com/LSIR/gsn.git gsn",
+		command => "/usr/bin/git clone gsn",
 		cwd 	=> "/home/vagrant/",
       	        creates => "/home/vagrant/gsn",
 		require => [Package["git"], File["/home/vagrant/"]],
